@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonsFolder.CircleButtonActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:text="Live Button"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp" />
+
+        <ru.katso.livebutton.LiveButton
+            android:id="@+id/mBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Button"
+            android:textColor="#B93737"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:backgroundColor="#DA3428"
+            app:corners="4dp"
+            app:normalHeight="6dp"
+            app:pressedHeight="2dp"
+            app:shadowColor="#b16262" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:text="Segment Group Button"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp" />
+
+        <co.ceryle.segmentedbutton.SegmentedButtonGroup
+            android:id="@+id/segmentedButtonGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:sbg_animateSelector="bounce"
+            app:sbg_animateSelectorDuration="1000"
+            app:sbg_backgroundColor="#DDE21717"
+            app:sbg_dividerColor="#DDE21717"
+            app:sbg_dividerPadding="10dp"
+            app:sbg_dividerRadius="10dp"
+            app:sbg_dividerSize="1dp"
+            app:sbg_position="0"
+            app:sbg_radius="2dp"
+            app:sbg_ripple="true"
+            app:sbg_rippleColor="#DDE21717"
+            app:sbg_selectorColor="#253BB4"
+            app:sbg_selectorTextColor="#fff"
+            app:sbg_shadow="true"
+            app:sbg_shadowElevation="3dp"
+            app:sbg_shadowMargin="4dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="10dp"
+                android:text="Button 1"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="10dp"
+                android:text="Button 2"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="10dp"
+                android:text="Button 3"
+                android:textAllCaps="false" />
+
+        </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+
+        <!-- <com.cuboid.cuboidcirclebutton.CuboidButton
+             android:layout_width="120dp"
+             android:layout_height="120dp"
+             android:textColor="#000"
+             android:text="default"
+             android:textSize="14dp"
+             android:id="@+id/cuboidButton" />-->
+
+        <!--  <Button
+              android:layout_width="140dp"
+              android:layout_height="140dp"
+              android:layout_gravity="center_horizontal"
+              android:background="@drawable/rounded_button"
+              android:gravity="center"
+              android:text="Future Resources"
+              android:textAllCaps="false"
+              android:textColor="#000"
+              android:textSize="20dp" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:text="Elegant Number Button"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp" />
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/elegentBtnS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="center"
+            app:backGroundColor="@android:color/holo_red_dark"
+            app:finalNumber="100"
+            app:initialNumber="0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:text="Magic Button"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp" />
+
+        <br.com.bloder.magic.view.MagicButton
+            android:id="@+id/magic_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            app:button_icon="@drawable/la"
+            app:button_icon_height="25dp"
+            app:button_icon_width="25dp"
+            app:expandable_area_color="#FFE21010"
+            app:hide_text="Hi Hassan!"
+            app:hide_text_color="#3838BB"
+            app:hide_text_size="12dp"
+            app:icon_button_color="@color/colorAccent"
+            app:magic_button_size="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:text="Submit Button"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:text="Socal Media Buttons"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp" />
+
+        <com.shaishavgandhi.loginbuttons.GoogleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in with Google"
+            android:textAlignment="center"
+            app:iconSize="30dp" />
+
+        <com.shaishavgandhi.loginbuttons.GoogleButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            app:iconCenterAligned="false"
+            app:iconSize="30dp"
+            app:roundedCorner="true"
+            app:roundedCornerRadius="75dp" />
+
+        <com.shaishavgandhi.loginbuttons.FacebookButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in with Facebook"
+            app:iconSize="30dp" />
+
+        <com.shaishavgandhi.loginbuttons.FacebookButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            app:iconCenterAligned="true"
+            app:iconSize="30dp"
+            app:roundedCorner="true"
+            app:roundedCornerRadius="75dp" />
+
+        <com.shaishavgandhi.loginbuttons.TwitterButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in with Twitter"
+            app:iconSize="30dp" />
+
+        <com.shaishavgandhi.loginbuttons.TwitterButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            app:iconCenterAligned="true"
+            app:iconSize="30dp"
+            app:roundedCorner="true"
+            app:roundedCornerRadius="75dp" />
+
+        <com.shaishavgandhi.loginbuttons.LinkedInButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in with LinkedIn"
+            app:iconSize="30dp" />
+
+        <com.shaishavgandhi.loginbuttons.LinkedInButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            app:iconCenterAligned="true"
+            app:iconSize="30dp"
+            app:roundedCorner="true"
+            app:roundedCornerRadius="75dp" />
+
+        <com.shaishavgandhi.loginbuttons.LinkedInButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            app:iconSize="30dp"
+            app:roundedCorner="true"
+            app:roundedCornerRadius="75dp"
+            app:transparentBackground="true" />
+
+    </LinearLayout>
+</ScrollView>

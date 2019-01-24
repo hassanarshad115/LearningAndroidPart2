@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="go to SBSY BEST MAP" />
+
+        <Button
+            android:id="@+id/btnMap2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="go to map Satellite sy" />
+
+        <Button
+            android:id="@+id/btnDifferntMapStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="go to Different Map styles" />
+
+        <Button
+            android:id="@+id/btnCircle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="go to Different Button Styles" />
+
+        <Button
+            android:id="@+id/btnStylishLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="go to Stylish Label" />
+
+        <Button
+            android:id="@+id/btnOthers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="go to Others" />
+
+        <Button
+            android:id="@+id/btnLicencM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="go to Licence" />
+
+        <Button
+            android:id="@+id/btnOtherTwoM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="go to other two" />
+
+        <Button
+            android:id="@+id/btnOtherThreeM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="go to other three" />
+
+        <com.spark.submitbutton.SubmitButton
+            android:id="@+id/sbmitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:text="Submit"
+            android:textColor="@color/gray"
+            app:sub_btn_background="@color/white"
+            app:sub_btn_duration="3000"
+            app:sub_btn_line_color="@android:color/holo_green_light"
+            app:sub_btn_ripple_color="@android:color/holo_green_light"
+            app:sub_btn_tick_color="#fff" />
+    </LinearLayout>
+</ScrollView>

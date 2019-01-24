@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_orange_dark"
+    tools:context=".OtherFolder.OtherTwo">
+
+    <com.antonionicolaspina.revealtextview.RevealTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welocme to Hassan "
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:textSize="30dp"
+        app:rtv_duration="2000"
+        android:layout_centerInParent="true"/>
+     />
+    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+        android:id="@+id/pulsator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:pulse_count="4"
+        app:pulse_duration="7000"
+        app:pulse_repeat="0"
+        app:pulse_color="#651FFF"
+        app:pulse_startFromScratch="false"
+        app:pulse_interpolator="Linear">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_centerInParent="true"
+            android:layout_height="50dp"
+            android:background="@drawable/la"
+          />
+    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+
+</LinearLayout>

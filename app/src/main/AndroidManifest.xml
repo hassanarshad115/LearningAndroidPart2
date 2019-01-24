@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hsnlearning.learningandroidpart2">
+    <!--
+            The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+            Google Maps Android API v2, but you must specify either coarse or fine
+            location permissions for the 'MyLocation' functionality.
+    -->
+    <!-- &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- ye nichy 8 lines likhe hain uper ki 2 lines m project ka nam b h so isko khyal sy kse r projct m use kry -->
+    <uses-permission android:name="com.hsnlearning.learningandroidpart2.Permission.MAPS_RECEIVE" />
+
+    <permission
+        android:name="com.hsnlearning.learningandroidpart2.Permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permissions.READ_GSRVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/football"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".SplashScreenFolder.SplashScreenActivity"/>
+        <activity android:name=".OtherFolder.OtherTwo" />
+        <activity android:name=".OtherFolder.LicensesKLyeActivity" />
+        <activity android:name=".OtherFolder.OtherActivity1" />
+        <activity android:name=".Label.StylishLabelActivity" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".EtBoxFoldeer.EtBoxActivity" />
+        <activity android:name=".ButtonsFolder.CircleButtonActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".DifferntMapStylesFolder.DifferentMapStyleActivity"
+            android:label="@string/title_activity_different_map_style" />
+        <activity
+            android:name=".MapFolder.MapsActivity2"
+            android:label="@string/title_activity_maps2" />
+
+
+        <activity android:name=".OtherFolder.OtherThreeSplashScreenOriginalActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".MapFolder.MapsActivity"
+            android:label="@string/title_activity_maps">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Label.StylishLabelActivity">
+
+    <com.everseat.textviewlabel.TextViewLabel
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hello World!"
+        android:textColor="#000FFF"
+        android:textSize="14sp"
+        app:labelColor="#FF3FD398" />
+
+    <com.everseat.textviewlabel.TextViewLabel
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textColor="#FFF"
+        android:textSize="14sp"
+        app:labelColor="#FFEC4C4C" />
+
+    <com.antonionicolaspina.revealtextview.RevealTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hello Reveal Text!"
+        android:textSize="20sp"
+        app:rtv_duration="2000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="Easy android animation"
+        android:id="@+id/btneasyandroidanimatoin"/>
+
+    <!--  YE YHA SY LIA H
+        https://github.com/HeZaiJin/SlantedTextView
+    -->
+    <ImageView
+        android:id="@+id/imgViewSlantedTV"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/football"></ImageView>
+
+    <com.haozhang.lib.SlantedTextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        app:slantedBackgroundColor="#3D3DC9"
+        app:slantedLength="40dp"
+        app:slantedMode="left"
+        app:slantedText="IOS"
+        app:slantedTextColor="#3DC944"
+        app:slantedTextSize="16sp" />
+
+    <in.anshul.libray.PasswordEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/p1"
+        android:hint="Confirm password"
+        app:hide_drawable="@drawable/hide_password"
+        app:password_visible="false"
+        app:show_drawable="@drawable/show_password" />
+
+   <!-- <in.anshul.libray.PasswordEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hide_text="Hide"
+        android:id="@+id/p2"
+        app:show_as_text="false"
+        app:show_text="Show" />-->
+</LinearLayout>
